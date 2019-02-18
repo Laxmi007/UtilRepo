@@ -41,7 +41,7 @@ def javastage() {
 			sh "sudo docker build -t mytomcat:latest java"	
 			sh "sudo docker stop mycontainer || true && sudo docker rm mycontainer || true"
 			sh "sudo docker run -d -p 8091:8080 --name mycontainer mytomcat"
-			sh "sudo docker cp /home/devopsuser7/.jenkins/workspace/Devopspipeline/target/petclinic.war mycontainer:/usr/local/tomcat/webapps/"			
+			sh "sudo docker cp /home/devopsuser6/.jenkins/workspace/Laxmi_Pipeline/target/petclinic.war mycontainer:/usr/local/tomcat/webapps/"			
 			}
 		}
 	
