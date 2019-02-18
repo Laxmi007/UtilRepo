@@ -1,7 +1,7 @@
 def javastage() {
   	 
 		stage('Checkout') {			
-			git "${properties.appPath}"									
+			git "${Properties.appPath}"									
 		}	
 
 		stage('Code Analysis') {
